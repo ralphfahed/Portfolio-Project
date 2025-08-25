@@ -1,0 +1,111 @@
+0, Define Project Objectives
+
+Purpose,
+The purpose of this project is to develop a WordPress-style dynamic website builder that allows users to create and customize multi-page websites easily without needing any coding knowledge, This project aims to provide a simple, flexible, and accessible platform for individuals, small businesses, freelancers, and organizations to establish an online presence efficiently,
+
+Objectives,
+1, Provide users with an intuitive interface to create, edit, and manage web pages dynamically,
+2, Enable customization of key website elements, including headers, footers, and body content, with live preview functionality,
+3, Deliver a functional MVP demonstrating core website building capabilities, laying the foundation for future enhancements and scalability,
+
+These objectives are SMART because they are,
+Specific, Focused on dynamic website creation features,
+Measurable, Users can create and save pages successfully,
+Achievable, Feasible for a two-person team with current skills,
+Relevant, Solves a real problem for non-technical users,
+Time-bound, Designed to be completed within the Stage 2 timeline,
+
+1, Identify Stakeholders and Team Roles
+
+Purpose,
+To document who is involved in or affected by the project and their respective responsibilities,
+
+Stakeholders,
+
+Internal,
+
+Ralph Fahed, Team Member, Project Manager, responsible for coordinating meetings, organizing tasks, and documenting progress,
+
+Abdalah Nana, Team Member, Team Lead, responsible for technical guidance, assisting in development, and ensuring MVP feasibility,
+
+External,
+
+Tutors and instructors, responsible for providing guidance, feedback, and evaluation,
+
+Potential users, including small businesses, freelancers, students, or organizations, who will benefit from the dynamic website builder,
+
+Team Roles,
+
+Project Manager, Ralph Fahed, oversees project planning, tracks progress, coordinates communication, ensures deadlines are met,
+
+Team Lead, Abdalah Nana, facilitates technical decision-making, reviews technical feasibility, supports development and implementation,
+
+Developers, Ralph Fahed and Abdalah Nana, collaboratively build the application, implement features, test functionality, and maintain code quality,
+
+2, Define Scope
+
+Purpose,
+To describe what the project will deliver and what it will not,
+
+In-Scope,
+
+Dynamic creation of website pages such as Home, About, and Contact,
+
+Editable header and footer including logos, navigation links, and colors,
+
+Editable body content with text and images,
+
+Live preview panel to see changes instantly,
+
+Saving and loading designs for continued editing,
+
+Out-of-Scope,
+
+Advanced templates and theme marketplace,
+
+User authentication and account management,
+
+Payment integration or e-commerce functionality,
+
+Publishing websites to a live domain,
+
+Advanced analytics or SEO features,
+
+3, Risks
+
+Purpose,
+To proactively consider challenges that might arise during the project and how to address them,
+
+Potential Risks and Mitigation Strategies,
+
+Risk, Limited experience with dynamic page editors and React component state management,
+Mitigation, Schedule learning sessions and allocate time early to experiment with components and live preview features,
+
+Risk, Complexity in implementing save and load functionality for designs,
+Mitigation, Break feature into smaller tasks, use local storage first for MVP, plan backend structure carefully,
+
+Risk, Timeline delays due to unforeseen technical challenges,
+Mitigation, Define realistic milestones, track progress weekly, adjust scope if necessary to meet MVP deadline,
+
+Risk, Team communication issues since there are only two members,
+Mitigation, Hold daily check-ins, document decisions in shared Google Docs, maintain open channels via WhatsApp or Slack,
+
+Risk, Bugs or unexpected behavior during live preview,
+Mitigation, Allocate time for testing, debug systematically, create a simple test plan for main features,
+
+4, Develop a High-Level Plan
+
+Purpose,
+To outline the major phases and milestones of the project,
+
+Timeline,
+
+Week 1-2, Stage 1: Idea Development, Team formation, brainstorming, MVP selection, Stage 1 report completed,
+
+Week 3-4, Stage 2: Project Charter Development, Define objectives, stakeholders, scope, risks, and high-level plan, Stage 2 document completed,
+
+Week 5-6, Stage 3: Technical Documentation, Create class diagrams, system architecture, workflows, detailed technical plan for MVP,
+
+Week 7-10, Stage 4: MVP Development, Implement core features including dynamic page creation, editable header/footer/body, live preview, save/load functionality,
+
+Week 11-12, Stage 5: Project Closure, Final presentation, evaluate project outcomes, reflect on lessons learned, submit project documentation,

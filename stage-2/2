@@ -1,0 +1,26 @@
+Purpose,
+To describe what the project will deliver and what it will not,
+
+In-Scope,
+
+Dynamic creation of website pages such as Home, About, and Contact,
+
+Editable header and footer including logos, navigation links, and colors,
+
+Editable body content with text and images,
+
+Live preview panel to see changes instantly,
+
+Saving and loading designs for continued editing,
+
+Out-of-Scope,
+
+Advanced templates and theme marketplace,
+
+User authentication and account management,
+
+Payment integration or e-commerce functionality,
+
+Publishing websites to a live domain,
+
+Advanced analytics or SEO features,

@@ -1,0 +1,19 @@
+Purpose,
+To proactively consider challenges that might arise during the project and how to address them,
+
+Potential Risks and Mitigation Strategies,
+
+Risk, Limited experience with dynamic page editors and React component state management,
+Mitigation, Schedule learning sessions and allocate time early to experiment with components and live preview features,
+
+Risk, Complexity in implementing save and load functionality for designs,
+Mitigation, Break feature into smaller tasks, use local storage first for MVP, plan backend structure carefully,
+
+Risk, Timeline delays due to unforeseen technical challenges,
+Mitigation, Define realistic milestones, track progress weekly, adjust scope if necessary to meet MVP deadline,
+
+Risk, Team communication issues since there are only two members,
+Mitigation, Hold daily check-ins, document decisions in shared Google Docs, maintain open channels via WhatsApp or Slack,
+
+Risk, Bugs or unexpected behavior during live preview,
+Mitigation, Allocate time for testing, debug systematically, create a simple test plan for main features,
