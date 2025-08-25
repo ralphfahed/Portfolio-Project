@@ -1,0 +1,40 @@
+3. Decision and Refinement
+Final MVP Selection
+
+After our evaluation and discussions, we selected the WordPress-style Dynamic Website Builder as our MVP. This decision was based on feasibility, alignment with our technical skills in JavaScript, React, and Python, and the potential impact of such a tool. The scoring rubric confirmed that this idea ranked the highest compared to other brainstormed options.
+
+Problem it Solves
+
+Many individuals and small businesses want to create professional websites but do not have coding knowledge. Current solutions can be expensive, complex, or limited. Our MVP solves this problem by offering a simplified platform for building and customizing websites dynamically without requiring technical expertise.
+
+Target Audience
+
+Small businesses that need a quick and affordable website.
+
+Freelancers who want to showcase portfolios.
+
+Students and beginners who want to learn web design concepts without coding.
+
+Organizations or clubs that need a simple online presence.
+
+Key Features
+
+For the MVP scope, we will focus on basic but essential features:
+
+Dynamic creation of pages such as Home, About, Contact.
+
+Editable header and footer with options for logos, navigation links, and colors.
+
+Editable body content with text blocks and images.
+
+Live preview panel to see changes instantly.
+
+Saving and loading designs to allow users to continue editing.
+
+Expected Outcomes
+
+A functional MVP where users can build a basic multi-page website dynamically.
+
+Simple and intuitive interface for editing header, footer, and content.
+
+A foundation that can later be expanded with advanced features such as templates, user authentication, or publishing options.
