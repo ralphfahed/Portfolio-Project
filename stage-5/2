@@ -1,0 +1,32 @@
+Purpose:
+To evaluate the team’s performance and gather constructive feedback for future projects.
+
+Team Retrospective Key Points
+
+What Worked Well:
+
+Both team members contributed equally to development and documentation.
+
+Clear task division helped complete sprint goals efficiently.
+
+Agile practices like daily stand-ups and sprint planning kept the project on track.
+
+Challenges Faced & Resolutions:
+
+Managing dynamic page components caused initial inconsistencies → resolved by defining reusable components.
+
+Integrating global header/footer updates across pages required additional logic → solved with centralized state management.
+
+Limited team size made multitasking necessary → used clear sprint assignments to distribute workload.
+
+Improvement Suggestions for Future Projects:
+
+Allocate more time for QA and comprehensive testing.
+
+Plan for better component libraries to speed up front-end development.
+
+Consider periodic feedback from end-users during development.
+
+Deliverable Section:
+
+Include these points in your Stage 5 lessons learned document (stage-5/0.pdf).

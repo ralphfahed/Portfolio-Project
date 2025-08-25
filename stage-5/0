@@ -1,0 +1,60 @@
+Purpose:
+To provide a comprehensive summary of the project, highlighting outcomes, challenges faced, and key takeaways.
+
+Results Summary
+
+Core Functionalities Achieved:
+
+User registration and login system.
+
+Dynamic project creation, with multiple pages per project.
+
+Global header and footer for all pages with toggle, logo, color, and size customization.
+
+Editable page body with buttons, contact forms, text, and images.
+
+Live preview and dynamic modification of page elements.
+
+Comparison to Initial Objectives:
+
+All main MVP objectives were successfully implemented.
+
+Dynamic customization features met the goal of providing flexible content management.
+
+End-user experience tested and found intuitive during development QA.
+
+Metrics / Performance Indicators:
+
+Number of successfully created projects/pages per user: unlimited.
+
+Header/footer changes reflected immediately across pages.
+
+All core features passed functional tests.
+
+Lessons Learned
+
+What Went Well:
+
+Effective teamwork between two members, leveraging React, Python, and SQLite knowledge.
+
+Agile sprint planning helped track progress and complete tasks iteratively.
+
+Clear documentation in Stage 3 made development smoother.
+
+Challenges and Solutions:
+
+Managing dynamic page elements initially caused inconsistencies; solved by defining reusable components.
+
+Integrating global header/footer changes across all pages required additional logic.
+
+Improvements for Future Projects:
+
+Allocate more time for QA and testing edge cases.
+
+Use a more structured component library for faster front-end development.
+
+Consider adding user feedback integration during development for iterative improvements.
+
+Deliverable Section:
+
+File name: stage-5/0.pdf
