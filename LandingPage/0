@@ -1,0 +1,46 @@
+Cover Image
+
+Display a large, visually appealing image at the top of the page.
+
+Can use a .jpg or .png file in your assets folder.
+
+Project Name
+
+Place the project title prominently below or on top of the cover image.
+
+Example: <h1>Dynamic Project Page Builder</h1>
+
+One-line Description
+
+Add a concise tagline summarizing the project.
+
+Example: <p>Create and customize your projects with dynamic pages, headers, and footers.</p>
+
+Navigation Elements
+
+Include a header bar with at least 2 links to different sections of the project.
+
+Example:
+
+<nav>
+  <a href="#features">Features</a>
+  <a href="#demo">Demo</a>
+</nav>
+
+
+Button to Deployed Project
+
+Add a labeled button that links to the live application.
+
+Example:
+
+<a href="https://your-project-live-link.com" target="_blank">
+  <button>Go to App</button>
+</a>
+
+
+Deliverable Section:
+
+A functional intro section visible when the project loads.
+
+Include screenshots or a short GIF for documentation if required.
