@@ -1,0 +1,24 @@
+Purpose,
+To define how the MVP components interact and ensure scalability and efficiency,
+
+High-Level Architecture,
+
+Components,
+
+Front-End, JavaScript with React, handles user interface for project dashboard, page editor, live preview, dynamic element insertion and editing, header/footer customization,
+
+Back-End, Python (Flask or Django), manages API requests, user authentication, project and page data, saves and loads user designs, applies header/footer settings globally,
+
+Database, SQLite, stores user accounts, projects, pages, headers, footers, and body element properties,
+
+External Services, Optional email API for contact form submissions,
+
+Source Control, Git/GitHub repository to manage code versioning and collaboration,
+
+Data Flow,
+1, User interacts with the front-end to create or edit projects/pages,
+2, Front-end sends requests to back-end Python API endpoints for saving or retrieving data,
+3, Back-end updates or fetches information from the SQLite database,
+4, Back-end returns the response to front-end, which updates the live preview,
+5, Optional external services (like email API) handle dynamic features like contact form submissions,
+6, All code changes are tracked in GitHub repository, ensuring version control and collaboration,

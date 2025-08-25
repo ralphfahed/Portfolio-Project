@@ -1,0 +1,48 @@
+Purpose,
+To identify and prioritize the functionalities of the MVP from the user’s perspective and visualize its interface,
+
+User Stories,
+
+Must Have,
+
+As a registered user, I want to create and manage multiple projects, so that I can organize my work efficiently,
+
+As a user, I want each project to have multiple pages, so that I can structure content flexibly,
+
+As a user, I want to edit the header and footer for all pages with a toggle to apply globally, so that design changes are consistent,
+
+As a user, I want to customize the header/footer logo, color, and size, so that I can personalize my website,
+
+As a user, I want to insert dynamic elements inside each page body, including buttons, contact forms, text, and images, so that my pages are interactive,
+
+As a user, I want to modify size, color, and background of elements dynamically, so that the page matches my design preference,
+
+Should Have,
+
+As a user, I want to preview changes live, so that I can see updates instantly,
+
+As a user, I want to save and load page designs, so that I can continue editing later,
+
+Could Have,
+
+As a user, I want to duplicate pages or elements, so that I can speed up design,
+
+As a user, I want to apply basic template layouts, so that I can start with a pre-designed structure,
+
+Won’t Have,
+
+As a user, I will not have e-commerce or payment features in the MVP,
+
+As a user, I will not have advanced analytics or SEO options in the MVP,
+
+Mockups,
+
+The MVP includes a user interface, so mockups should show the main screens, for example,
+
+Project Dashboard: lists all user projects with options to create, edit, or delete projects,
+
+Page Editor Screen: shows header/footer section with global toggle, body area to insert buttons, contact forms, text, images, and dynamic property controls (size, color, background),
+
+Live Preview Panel: displays the live update of the page as changes are made,
+
+Navigation Panel: allows switching between pages within a project,

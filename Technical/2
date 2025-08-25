@@ -1,0 +1,49 @@
+User,
+
+Attributes: id, password_hash, first_name, last_name, date_of_birth, created_at, updated_at,
+
+Methods: register(), login(), delete_account(),
+
+Project,
+
+Attributes: id, user_id, name, created_at, updated_at,
+
+Methods: create_project(), update_project(), delete_project(), get_projects(),
+
+Page,
+
+Attributes: id, project_id, title, created_at, updated_at,
+
+Methods: create_page(), update_page(), delete_page(), get_pages(),
+
+HeaderFooter,
+
+Attributes: id, project_id, logo_url, color, size, applied_globally,
+
+Methods: update_header(), update_footer(), toggle_global_apply(),
+
+BodyElement,
+
+Attributes: id, page_id, type, content, size, color, background, position,
+
+Methods: add_element(), update_element(), delete_element(), move_element(),
+
+Database Design (SQLite)
+
+Tables and Attributes,
+
+users: id (PK), password_hash, first_name, last_name, date_of_birth, created_at, updated_at
+projects: id (PK), user_id (FK -> users.id), name, created_at, updated_at
+pages: id (PK), project_id (FK -> projects.id), title, created_at, updated_at
+header_footer: id (PK), project_id (FK -> projects.id), logo_url, color, size, applied_globally
+body_elements: id (PK), page_id (FK -> pages.id), type, content, size, color, background, position
+
+Relationships,
+
+users 1 → N projects,
+
+projects 1 → N pages,
+
+projects 1 → 1 header_footer, (applied globally)
+
+pages 1 → N body_elements,

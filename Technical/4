@@ -1,0 +1,30 @@
+Purpose,
+To specify how the system interacts with external APIs and define its own API.
+
+External APIs
+
+Email API (Optional):
+
+Purpose: To handle contact form submissions from pages dynamically.
+
+Example: SendGrid, Mailgun, or similar.
+
+Reason: Chosen for reliability and ease of integration with Python back-end.
+
+
+| Endpoint                                 | HTTP Method | Input (JSON)                                                                                                                             | Output (JSON)                             | Description                        |
+| ---------------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------- |
+| `/api/register`                          | POST        | `{ "password_hash": "...", "first_name": "...", "last_name": "...", "date_of_birth": "YYYY-MM-DD" }`                                     | `{ "success": true, "user_id": 1 }`       | Registers a new user               |
+| `/api/login`                             | POST        | `{ "password_hash": "...", "user_id": 1 }`                                                                                               | `{ "success": true, "user_data": {...} }` | Logs in user                       |
+| `/api/delete_user/<user_id>`             | DELETE      | None                                                                                                                                     | `{ "success": true }`                     | Deletes a user account             |
+| `/api/create_project`                    | POST        | `{ "user_id": 1, "name": "Project Name" }`                                                                                               | `{ "success": true, "project_id": 1 }`    | Creates a new project              |
+| `/api/update_project/<project_id>`       | PUT         | `{ "name": "Updated Project Name" }`                                                                                                     | `{ "success": true }`                     | Updates project information        |
+| `/api/delete_project/<project_id>`       | DELETE      | None                                                                                                                                     | `{ "success": true }`                     | Deletes a project                  |
+| `/api/create_page`                       | POST        | `{ "project_id": 1, "title": "Page Title" }`                                                                                             | `{ "success": true, "page_id": 1 }`       | Creates a new page in a project    |
+| `/api/update_page/<page_id>`             | PUT         | `{ "title": "Updated Title" }`                                                                                                           | `{ "success": true }`                     | Updates page information           |
+| `/api/delete_page/<page_id>`             | DELETE      | None                                                                                                                                     | `{ "success": true }`                     | Deletes a page                     |
+| `/api/update_header_footer/<project_id>` | PUT         | `{ "logo_url": "...", "color": "...", "size": "...", "applied_globally": true/false }`                                                   | `{ "success": true }`                     | Updates header/footer settings     |
+| `/api/add_body_element`                  | POST        | `{ "page_id": 1, "type": "button/text/image", "content": "...", "size": "...", "color": "...", "background": "...", "position": "..." }` | `{ "success": true, "element_id": 1 }`    | Adds a new body element to a page  |
+| `/api/update_body_element/<element_id>`  | PUT         | `{ "content": "...", "size": "...", "color": "...", "background": "...", "position": "..." }`                                            | `{ "success": true }`                     | Updates a body element             |
+| `/api/delete_body_element/<element_id>`  | DELETE      | None                                                                                                                                     | `{ "success": true }`                     | Deletes a body element from a page |
+

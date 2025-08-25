@@ -1,0 +1,156 @@
+Stage 3: Technical Documentation
+1, User Stories and Mockups
+
+User Stories (prioritized with MoSCoW):
+
+Must Have:
+
+As a user, I want to register an account, so that I can create and manage my projects.
+
+As a user, I want to create projects, so that I can organize my pages.
+
+As a user, I want to add pages and body elements, so that I can customize content dynamically.
+
+Should Have:
+
+As a user, I want to edit the header and footer for all pages, so that my branding is consistent.
+
+Could Have:
+
+As a user, I want to toggle global header/footer settings, so that I can apply changes to all pages quickly.
+
+Mockups:
+
+Main PageEditor interface showing header/footer controls, body element panel, and live preview.
+
+ProjectDashboard showing all projects for the user.
+
+2, System Architecture
+
+High-Level Architecture Diagram (text representation):
+
+Front-End (React) <--> Back-End (Python API) <--> SQLite Database
+         ^                                 |
+         |                                 |
+      Live Preview                       External APIs (Email)
+
+3, Components, Classes, and Database Design
+Back-End Classes
+
+User: id, password_hash, first_name, last_name, date_of_birth, created_at, updated_at | Methods: register(), login(), delete_account()
+
+Project: id, user_id, name, created_at, updated_at | Methods: create_project(), update_project(), delete_project(), get_projects()
+
+Page: id, project_id, title, created_at, updated_at | Methods: create_page(), update_page(), delete_page(), get_pages()
+
+HeaderFooter: id, project_id, logo_url, color, size, applied_globally | Methods: update_header(), update_footer(), toggle_global_apply()
+
+BodyElement: id, page_id, type, content, size, color, background, position | Methods: add_element(), update_element(), delete_element(), move_element()
+
+Database Tables (SQLite)
+
+users: id, password_hash, first_name, last_name, date_of_birth, created_at, updated_at
+
+projects: id, user_id, name, created_at, updated_at
+
+pages: id, project_id, title, created_at, updated_at
+
+header_footer: id, project_id, logo_url, color, size, applied_globally
+
+body_elements: id, page_id, type, content, size, color, background, position
+
+ER Diagram (text representation):
+
+users(id) 1---N projects(id,user_id)
+projects(id) 1---N pages(id,project_id)
+projects(id) 1---1 header_footer(id,project_id)
+pages(id) 1---N body_elements(id,page_id)
+
+Front-End Components
+
+ProjectDashboard: list and manage projects
+
+PageEditor: main editor with header/footer and body element controls
+
+LivePreview: shows real-time updates
+
+NavigationPanel: switch between pages
+
+ElementControls: edit element properties dynamically
+
+4, Sequence Diagrams
+
+User Registration:
+
+User -> Front-End: fills registration form
+Front-End -> Back-End API: register(user_data)
+Back-End -> Database: insert user
+Database --> Back-End: success
+Back-End --> Front-End: registration success
+Front-End --> User: display confirmation
+
+
+Create New Project Page:
+
+User -> Front-End: click "New Project"
+Front-End -> Back-End API: create_project(project_data)
+Back-End -> Database: insert project
+Database --> Back-End: project_id
+Back-End --> Front-End: project_id
+Front-End --> User: display new project
+
+
+Edit Page Body Element:
+
+User -> Front-End: edit body element
+Front-End -> Back-End API: add/update element
+Back-End -> Database: insert/update body_elements
+Database --> Back-End: success
+Back-End --> Front-End: updated element data
+Front-End --> LivePreview: show updated element
+
+5, API Specifications
+
+External API:
+
+Email API (optional, e.g., SendGrid) for contact form submissions
+
+Internal API Endpoints (examples):
+
+Endpoint	Method	Input	Output	Description
+/api/register	POST	{password_hash, first_name, last_name, date_of_birth}	{success, user_id}	Register user
+/api/login	POST	{password_hash, user_id}	{success, user_data}	Log in user
+/api/delete_user/<user_id>	DELETE	None	{success}	Delete user
+/api/create_project	POST	{user_id, name}	{success, project_id}	Create project
+/api/add_body_element	POST	{page_id, type, content, size, color, background, position}	{success, element_id}	Add body element
+6, SCM and QA Plans
+
+SCM:
+
+Git with GitHub repo
+
+Branches: main, development, feature/<name>
+
+Pull requests and code reviews before merging
+
+QA:
+
+Unit tests (Python backend, Jest frontend)
+
+Integration tests for front-end/back-end interactions
+
+Manual testing for critical flows
+
+Staging server for QA, production deploy after approval
+
+7, Technical Justifications
+
+Front-End: React for dynamic UI and component reusability
+
+Back-End: Python for fast API development and easy database integration
+
+Database: SQLite for simple relational storage with minimal setup
+
+API Design: RESTful endpoints for clear communication between front-end and back-end
+
+SCM & QA: Git workflow and testing ensure code quality and project stability

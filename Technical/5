@@ -1,0 +1,46 @@
+Purpose,
+To establish procedures for managing code, the development lifecycle, and ensuring quality.
+
+Source Control Management (SCM)
+
+Tool: Git with GitHub repository (https://github.com/ralphfahed/Portfolio-Project.git)
+
+Branching Strategy:
+
+main – production-ready stable code
+
+development – integrates all feature branches before merging to main
+
+feature/<feature-name> – for individual features or bug fixes
+
+Process:
+
+Commit changes regularly with descriptive messages
+
+Pull requests required for merging feature branches into development
+
+Code reviews by team member before approval
+
+Merge development into main after QA and approval
+
+Quality Assurance (QA)
+
+Testing Strategy:
+
+Unit tests for backend API endpoints using Python testing frameworks (e.g., unittest or pytest)
+
+Integration tests to ensure correct interactions between front-end and back-end
+
+Manual testing for critical user flows like registration, project creation, page editing, and live preview
+
+Tools:
+
+Jest for frontend component testing
+
+Postman for API endpoint testing
+
+Deployment Pipeline:
+
+Staging: deploy development branch to a staging server for testing
+
+Production: deploy main branch after passing QA checks

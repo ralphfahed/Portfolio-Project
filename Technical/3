@@ -1,0 +1,26 @@
+Purpose,
+To show how components or services interact for key use cases,
+
+Critical Use Cases
+
+Use Case 1, User Registration
+1, User fills out registration form in front-end (React),
+2, Front-end sends register() request to back-end (Python API),
+3, Back-end validates data, hashes password, stores user in SQLite database,
+4, Back-end returns success/failure response to front-end,
+5, Front-end displays confirmation or error message.
+
+Use Case 2, Create New Project Page
+1, User clicks "New Project" in ProjectDashboard,
+2, Front-end sends create_project() request to back-end API,
+3, Back-end inserts new project record in SQLite,
+4, Back-end returns new project ID,
+5, Front-end updates dashboard with the new project,
+
+Use Case 3, Edit Page Body Element
+1, User selects a page in PageEditor,
+2, User adds/edits a BodyElement (button, text, image),
+3, Front-end sends add_element() or update_element() request to back-end API,
+4, Back-end updates SQLite body_elements table,
+5, Back-end returns updated element data,
+6, Front-end updates LivePreview,
